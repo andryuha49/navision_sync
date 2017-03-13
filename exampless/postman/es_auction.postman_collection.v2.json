@@ -1,0 +1,409 @@
+{
+	"variables": [],
+	"info": {
+		"name": "es_auction",
+		"_postman_id": "caf61869-72f3-dc6b-7291-30a0a0682f6d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"description": "",
+			"item": [
+				{
+					"name": "login - http://localhost:8080/api/auth/login",
+					"request": {
+						"url": "http://localhost:8080/api/auth/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"login\": \"user\",\n  \"password\": \"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "logout - http://localhost:8080/api/auth/logout",
+					"request": {
+						"url": "http://localhost:8080/api/auth/logout",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InVzZXIiLCJjcmVhdGVkIjoxNDc5NzY2NzA0ODY0LCJpYXQiOjE0Nzk3NjY3MDR9.OiSLpsNPzf8wgIO5lLHtxTGe80nPqKrL9UunjLNAs5U",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"login\": \"user\",\n  \"password\": \"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "logout2 - http://localhost:8080/api/auth/logout",
+					"request": {
+						"url": "http://localhost:8080/api/auth/logout?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InVzZXIiLCJjcmVhdGVkIjoxNDc5NzY2ODAwMzY3LCJpYXQiOjE0Nzk3NjY4MDB9.sIgTFRuPSR5DvWI5PP4yBqti9tGFKPeBa2x8LDjn7ZA",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"login\": \"user\",\n  \"password\": \"password\"\n}"
+						},
+						"description": "logout by access_token in url parameter"
+					},
+					"response": []
+				},
+				{
+					"name": "register - http://localhost:8080/api/auth/register",
+					"request": {
+						"url": "http://localhost:8080/api/auth/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"login\": \"user\",\n  \"email\": \"test@test.com\",\n  \"password\": \"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "userInfo - http://localhost:8080/api/auth/userInfo",
+					"request": {
+						"url": "http://localhost:8080/api/auth/userInfo",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InVzZXIiLCJjcmVhdGVkIjoxNDc4OTA2ODIzMzQxLCJpYXQiOjE0Nzg5MDY4MjN9.X2p5jh5PUUAqie9OdGJXFne7ablL5sHFJhDEJzs_mxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"login\": \"user\",\n  \"password\": \"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "restorePassword - http://localhost:8080/api/auth/restorePassword",
+					"request": {
+						"url": "http://localhost:8080/api/auth/restorePassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"test@test.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "config",
+			"description": "",
+			"item": [
+				{
+					"name": "getAll - http://localhost:8080/api/config",
+					"request": {
+						"url": "http://localhost:8080/api/config",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InVzZXIiLCJjcmVhdGVkIjoxNDc4OTA2ODIzMzQxLCJpYXQiOjE0Nzg5MDY4MjN9.X2p5jh5PUUAqie9OdGJXFne7ablL5sHFJhDEJzs_mxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get - http://localhost:8080/api/config/smtp",
+					"request": {
+						"url": "http://localhost:8080/api/config/smtp",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg0ODA4ODE0NiwiaWF0IjoxNDc5ODQ4MDg4fQ.07GIP-LaI0srdMoGnyPU3exYU2YB9o_mkqmfw1z7Q00",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "post - http://localhost:8080/api/config",
+					"request": {
+						"url": "http://localhost:8080/api/config/smtp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg0NzcyNDQ0NiwiaWF0IjoxNDc5ODQ3NzI0fQ.H9ppshISipvB--Pr5eB20aVjTHlSiaCqEi0nSXc7CEo",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sender\":\"user@gmail.com\",\n\t\"host\": \"smtp.gmail.com\",\n\t\"port\": 465,\n\t\"secure\": true,\n\t\"auth\": {\n\t\t\"user\": \"user@gmail.com\",\n\t\t\"pass\": \"password\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete - http://localhost:8080/api/config/smtp",
+					"request": {
+						"url": "http://localhost:8080/api/config/smtp",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg0ODA4ODE0NiwiaWF0IjoxNDc5ODQ4MDg4fQ.07GIP-LaI0srdMoGnyPU3exYU2YB9o_mkqmfw1z7Q00",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "put - http://localhost:8080/api/config",
+					"request": {
+						"url": "http://localhost:8080/api/config/smtp",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg1NTk3NDc2NCwiaWF0IjoxNDc5ODU1OTc0fQ.VqgTa4UjVBo9q8fDSTslYelkEaj3_ZB8_LBheOAAa6o",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sender\":\"user@gmail.com\",\n\t\"host\": \"smtp.gmail.com\",\n\t\"port\": 465,\n\t\"secure\": true,\n\t\"auth\": {\n\t\t\"user\": \"user@gmail.com\",\n\t\t\"pass\": \"password\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "reset - http://localhost:8080/api/config/reset/smtp",
+					"request": {
+						"url": "http://localhost:8080/api/config/reset/smtp",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTkzMTAwNzgwNCwiaWF0IjoxNDc5OTMxMDA3fQ.4n1bKyaR6EtUqIdyyyB_GNXYVgmPggtFMxSeYdEli68",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user/profile",
+			"description": "",
+			"item": [
+				{
+					"name": "get - http://localhost:8080/api/user/profile/",
+					"request": {
+						"url": "http://localhost:8080/api/user/profile/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg0ODA4ODE0NiwiaWF0IjoxNDc5ODQ4MDg4fQ.07GIP-LaI0srdMoGnyPU3exYU2YB9o_mkqmfw1z7Q00",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword - http://localhost:8080/api/user/profile/changePassword",
+					"request": {
+						"url": "http://localhost:8080/api/user/profile/changePassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg0NzcyNDQ0NiwiaWF0IjoxNDc5ODQ3NzI0fQ.H9ppshISipvB--Pr5eB20aVjTHlSiaCqEi0nSXc7CEo",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"newPassword\":\"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete - http://localhost:8080/api/user/profile/",
+					"request": {
+						"url": "http://localhost:8080/api/user/profile/",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg0ODA4ODE0NiwiaWF0IjoxNDc5ODQ4MDg4fQ.07GIP-LaI0srdMoGnyPU3exYU2YB9o_mkqmfw1z7Q00",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "update - http://localhost:8080/api/user/profile/",
+					"request": {
+						"url": "http://localhost:8080/api/user/profile/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiY3JlYXRlZCI6MTQ3OTg0NzcyNDQ0NiwiaWF0IjoxNDc5ODQ3NzI0fQ.H9ppshISipvB--Pr5eB20aVjTHlSiaCqEi0nSXc7CEo",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"new@email.com\",\n\t\"firstName\":\"firstname\",\n\t\"lastName\":\"lastName\",\n\t\"secondName\":\"secondName\",\n\t\"avatar\":\"base64:str\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

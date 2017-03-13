@@ -1,0 +1,58 @@
+{
+  "name": "navision_sync",
+  "version": "1.0.0",
+  "description": "SE: Rest api for SE-front homework site",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src -s -D -d dist --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "npm run -s build && node dist",
+    "prestart": "npm run -s build",
+    "test": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "cors": "^2.7.1",
+    "crypto": "0.0.3",
+    "eslint": "^3.1.1",
+    "express": "^4.13.3",
+    "filelogger": "^1.0.3",
+    "http": "0.0.0",
+    "jsonwebtoken": "^7.1.9",
+    "mssql": "^3.3.0",
+    "node.extend": "^1.1.6",
+    "nodemailer": "^2.6.4",
+    "nodemon": "^1.9.2",
+    "node-windows": "^0.1.12",
+    "passport": "^0.3.2",
+    "passport-http-bearer": "^1.0.1",
+    "passport-http-jwt-bearer": "^0.1.3",
+    "request": "^2.79.0",
+    "resource-router-middleware": "^0.5.1",
+    "tingodb": "^0.4.2"
+  },
+  "devDependencies": {}
+}

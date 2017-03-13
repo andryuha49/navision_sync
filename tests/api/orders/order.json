@@ -1,0 +1,139 @@
+{
+  "slug":79,
+  "id":79,
+  "number":"PKB-к0000335",
+  "externalId":"PKB-к0000335",
+  "orderType":"1",
+  "orderMethod":"1c",
+  "countryIso":"UA",
+  "createdAt":"2016-11-18 09:34:38",
+  "statusUpdatedAt":"2016-11-18 09:34:38",
+  "summ":11812,
+  "totalSumm":12112,
+  "prepaySum":1122,
+  "purchaseSumm":0,
+  "discount":0,
+  "discountPercent":0,
+  "markDatetime":"2016-11-18 09:34:38",
+  "firstName":"Андрей",
+  "email":"",
+  "call":false,
+  "expired":false,
+  "customerComment":"Коментарии клиента",
+  "managerComment":"Коментарии Оператора",
+  "managerId":48,
+  "customer":{
+    "id":108,
+    "externalId":"0000000001",
+    "firstName":"",
+    "lastName":"",
+    "patronymic":"",
+    "email":"",
+    "phones":[
+    ],
+    "address":{
+    },
+    "createdAt":"2016-10-27 10:16:27",
+    "vip":false,
+    "bad":false,
+    "site":"promenu-ua",
+    "contragent":{
+      "contragentType":"legal-entity"
+    },
+    "personalDiscount":0,
+    "marginSumm":11862,
+    "totalSumm":12112,
+    "averageSumm":12112,
+    "ordersCount":1,
+    "customFields":[
+    ]
+  },
+  "contragent":{
+    "contragentType":"legal-entity"
+  },
+  "delivery":{
+    "code":"me-biesplatno",
+    "cost":300,
+    "netCost":250,
+    "date":"2017-03-08",
+    "address":{
+      "index":"22000",
+      "countryIso":"UA",
+      "region":"Киев город",
+      "regionId":91,
+      "city":"Киев",
+      "cityId":22751,
+      "street":"Тичини павла",
+      "streetId":1822031,
+      "streetType":"пр-кт.",
+      "building":"1В",
+      "floor":5,
+      "block":1,
+      "house":"А",
+      "metro":"Гидропарк",
+      "text":"пр-кт. Тичини павла, д. 1В, стр.\/корп. А, под. 1, эт. 5, метро Гидропарк"
+    }
+  },
+  "paymentType":"bank-card",
+  "site":"promenu-ua",
+  "status":"new",
+  "items":[
+    {
+      "id":227,
+      "initialPrice":6464,
+      "discount":0,
+      "discountPercent":0,
+      "createdAt":"2017-01-27 11:34:40",
+      "quantity":1,
+      "status":"new",
+      "offer":{
+        "id":3388,
+        "externalId":"МЭ_КЛИЕНТ",
+        "name":"WOK-сковорода Profiresist 28 см"
+      },
+      "properties":[
+      ],
+      "purchasePrice":0
+    },
+    {
+      "id":228,
+      "initialPrice":2242,
+      "discount":0,
+      "discountPercent":0,
+      "createdAt":"2017-01-27 11:37:38",
+      "quantity":1,
+      "status":"new",
+      "offer":{
+        "id":2353,
+        "externalId":"МЭ_КЛИЕНТ",
+        "name":"Бак для мусора 20 л"
+      },
+      "properties":[
+      ],
+      "purchasePrice":0
+    },
+    {
+      "id":229,
+      "initialPrice":3106,
+      "discount":0,
+      "discountPercent":0,
+      "createdAt":"2017-01-27 12:08:12",
+      "quantity":1,
+      "status":"new",
+      "offer":{
+        "id":2497,
+        "externalId":"МЭ_КЛИЕНТ",
+        "name":"Бак для мусора 30 л"
+      },
+      "properties":[
+      ],
+      "purchasePrice":0
+    }
+  ],
+  "fromApi":true,
+  "shipmentStore":"ЕВРОПА",
+  "shipped":false,
+  "customFields":[
+  ],
+  "uploadedToExternalStoreSystem":false
+}

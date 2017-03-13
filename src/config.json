@@ -1,0 +1,50 @@
+{
+	"port": 8080,
+	"serverSecret": "serverSecret",
+	"bodyLimit": "100kb",
+	"corsHeaders": ["Link"],
+	"security": {
+		"tokenLife" : 3600
+	},
+	"windowsService":{
+		"name":"navision_sync_service",
+		"description": "The navision_sync web server.",
+		"script": "./dist/index.js",
+		"user":{
+			"domain": null,
+			"account": "администратор",
+			"password":"mirsodessa"
+		}
+	},
+	"tingoDb":{
+		"path":"./db"
+	},
+	"logger":{
+		"_logFolder_comment": "folder has to be created before the beginning",
+		"logFolder": "./logs/",
+		"_logLevel_comment": "error|warn|info|debug",
+		"logLevel": "warn",
+		"logType": "file"
+	},
+	"orders":{
+		"crmApiKey": "HvJ2KOiy4UGccwj3bAgo6V8GApmcqF8M",
+		"crmServerUrl": "https://mirs.retailcrm.ru/",
+		"sqlServerConnectionConfig": {
+			"user": "WEBGate",
+			"password": "lc127we27",
+			"_server_comment": "You can use 'server\\instance' to connect to named instance",
+			"server": "192.168.50.251",
+			"database": "Views"
+		}
+	},
+	"smtp": {
+		"sender":"user@gmail.com",
+		"host": "smtp.gmail.com",
+		"port": 465,
+		"secure": true,
+		"auth": {
+			"user": "user@gmail.com",
+			"pass": "password"
+		}
+	}
+}

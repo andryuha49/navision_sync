@@ -1,0 +1,88 @@
+{
+	"id": "caf61869-72f3-dc6b-7291-30a0a0682f6d",
+	"name": "es_auction",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "1d4b4e02-2a84-1561-30b0-8e1b99d317e3",
+			"name": "auth",
+			"description": "",
+			"order": [
+				"7cb3d349-dfc2-a29c-2458-15198d9b473e",
+				"0f79e165-d776-a3c1-341b-44b9e0b36034",
+				"4f6094f0-64f8-54c1-e6a1-7e86aff1fd52"
+			],
+			"owner": "732734"
+		}
+	],
+	"timestamp": 1478896737482,
+	"owner": "732734",
+	"public": false,
+	"requests": [
+		{
+			"id": "0f79e165-d776-a3c1-341b-44b9e0b36034",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8080/api/auth/register",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "caf61869-72f3-dc6b-7291-30a0a0682f6d",
+			"data": [],
+			"dataMode": "raw",
+			"name": "register - http://localhost:8080/api/auth/register",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1478896899549,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1d4b4e02-2a84-1561-30b0-8e1b99d317e3",
+			"rawModeData": "{\n  \"login\": \"user\",\n  \"email\": \"test@test.com\",\n  \"password\": \"password\"\n}"
+		},
+		{
+			"id": "4f6094f0-64f8-54c1-e6a1-7e86aff1fd52",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InVzZXIiLCJjcmVhdGVkIjoxNDc4OTA2ODIzMzQxLCJpYXQiOjE0Nzg5MDY4MjN9.X2p5jh5PUUAqie9OdGJXFne7ablL5sHFJhDEJzs_mxQ\n",
+			"url": "http://localhost:8080/api/auth/userInfo",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478926674464,
+			"name": "userInfo - http://localhost:8080/api/auth/userInfo",
+			"description": "",
+			"collectionId": "caf61869-72f3-dc6b-7291-30a0a0682f6d",
+			"responses": [],
+			"rawModeData": "{\n  \"login\": \"user\",\n  \"password\": \"password\"\n}"
+		},
+		{
+			"id": "7cb3d349-dfc2-a29c-2458-15198d9b473e",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8080/api/auth/login",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "caf61869-72f3-dc6b-7291-30a0a0682f6d",
+			"data": [],
+			"dataMode": "raw",
+			"name": "login - http://localhost:8080/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1478896841020,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1d4b4e02-2a84-1561-30b0-8e1b99d317e3",
+			"rawModeData": "{\n  \"login\": \"user\",\n  \"password\": \"password\"\n}"
+		}
+	]
+}
